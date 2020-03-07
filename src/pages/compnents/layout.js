@@ -1,6 +1,5 @@
 import React from "react"
 
-import navbar from './navbar'
 import Navbar from "./navbar"
 
 export default ({ children }) => (
