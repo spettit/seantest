@@ -12,7 +12,7 @@ export default ({data}) => {
      return (
       <LoadScript
         id="script-loader"
-        googleMapsApiKey="AIzaSyAov8VpvRFBsCiFsB8pZIMa4P2NEP0qwcU"
+        googleMapsApiKey={process.env.GATSBY_GOOGLE_API}
         // libraries="geometry"
         // {...other props}
       >
