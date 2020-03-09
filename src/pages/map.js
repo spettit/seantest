@@ -43,17 +43,17 @@ export default ({data}) => {
   
 }
 
-// export const mapquery = graphql`
-// query {
-//     allSomegpsjsonJson {
-//     edges {
-//       node {
-//         lat
-//         lng
-//       }
-//     }
-//   }
+export const mapquery = graphql`
+query {
+    allSomegpsjsonJson {
+    edges {
+      node {
+        lat
+        lng
+      }
+    }
+  }
 
 
-// }`
+}`
 
