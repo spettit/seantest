@@ -18,6 +18,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
+    'gatsby-transformer-json',
     {
       resolve: `gatsby-plugin-typography`,
       options: {
