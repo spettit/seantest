@@ -18,14 +18,16 @@ export default ( {data} ) => {
 
     export const query = graphql`
     query {
-  allFile(filter: {internal: {}, extension: {eq: "png"}}) {
+      allFile(filter: {internal: {mediaType: {glob: "image/*"}}}) {
     edges {
       node {
-        absolutePath
-        relativePath
         publicURL
+        internal {
+          mediaType
+        }
       }
     }
+  
 
 }
 
