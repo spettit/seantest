@@ -22,3 +22,23 @@ collections:
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "GPS", name: "gps", widget: "file" }
+
+
+collections:
+  - name: "trips"
+    label: "Tripa"
+    folder: "src/trips"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+        label: "Template Key",
+        name: "templateKey",
+        widget: "hidden",
+        default: "blog-post",
+      }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "GPS", name: "gps", widget: "file" }      
+  
