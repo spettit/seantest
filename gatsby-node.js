@@ -22,7 +22,7 @@ exports.createPages = async ({ graphql, actions}) => {
   const { createPage } = actions
   const result = await graphql(`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark (filter: {fields: {slug: {glob: "/posts/*"}}}) {
       edges {
         node {
           fields {
@@ -34,6 +34,7 @@ exports.createPages = async ({ graphql, actions}) => {
   }
 ` )
 result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  console.log(node)
   createPage({
     path: node.fields.slug,
     component: path.resolve(`./src/templates/blog-post.js`),

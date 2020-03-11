@@ -11,6 +11,7 @@ collections:
     folder: "src/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    filter: { field: "title", value: "Debbie Harry" }
     fields:
       - {
           label: "Template Key",
