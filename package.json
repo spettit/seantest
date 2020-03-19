@@ -16,6 +16,7 @@
   "dependencies": {
     "@react-google-maps/api": "^1.8.5",
     "gatsby": "^2.19.7",
+    "gatsby-plugin-netlify-identity-widget": "^1.1.1",
     "gatsby-plugin-typography": "^2.3.23",
     "gatsby-source-filesystem": "^2.1.50",
     "gatsby-transformer-json": "^2.2.27",

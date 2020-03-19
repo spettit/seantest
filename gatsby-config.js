@@ -19,6 +19,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     'gatsby-transformer-json',
+    'gatsby-plugin-netlify-identity-widget',
     {
       resolve: `gatsby-plugin-typography`,
       options: {
